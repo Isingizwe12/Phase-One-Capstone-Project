@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Header -->
-<header class="bg-white shadow">
+<header class="bg-white shadow-lg sticky top-0 z-10 mb-2 p-2">
   <nav class="">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -67,9 +67,35 @@
     </div>
   </nav>
 </header>
+<!-- Main -->
+
+<main>
+    <!-- Hero Section -->
+<section class="relative h-screen bg-cover bg-center shadow-lg" style="background-image: url('assets/images/lib.jpg');">
+  
+  <!-- Dark overlay with lower opacity -->
+  <div class="absolute inset-0 bg-black" style="opacity: 0.5;"></div>
+
+ <!-- Content -->
+<div class="relative z-10 flex items-center justify-center h-full px-4 md:px-20">
+  <div class="bg-white bg-opacity-90 p-6 md:p-10 rounded-lg shadow-lg text-center w-2xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+      Discover Your Next Favorite Book
+    </h1>
+    <p class="text-lg md:text-xl text-gray-800 mt-2">
+      Browse, search, and save your favorite books all in one place.
+    </p>
+    <a href="#books" class="mt-3 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-300 inline-block">
+      Explore Books
+    </a>
+  </div>
+</div>
 
 
 
+</section>
+
+</main>
 
 </body>
 </html>
