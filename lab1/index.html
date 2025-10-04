@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Book Explorer</title>
+</head>
+<body>
+    <!-- Header -->
+<header class="bg-white shadow">
+  <nav class="">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl">📖</span>
+          <span class="text-lg font-semibold">Book Explorer</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="#" class="px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
+          <a href="#" class="px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
+
+          <!-- Search Form -->
+          <form class="flex items-center" onsubmit="event.preventDefault(); alert('Search coming soon!');">
+            <input type="text" placeholder="Search books..."
+                   class="px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"  />
+            <button type="submit"
+                    class="px-3 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 flex items-center justify-center transition cursor-pointer">
+              🔎
+            </button>
+          </form>
+
+          <!-- Favorites -->
+          <a href="#" class="px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition">
+            🤍 Favorites
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-2xl">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1">
+      <a href="#" class="block px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
+      <a href="#" class="block px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
+      <form class="flex items-center mt-2">
+        <input type="text" placeholder="Search books..."
+               class="flex-1 px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <button type="submit"
+                class="px-3 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 transition">
+          🔎
+        </button>
+      </form>
+      <a href="#" class="block px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition mt-2">
+        🤍 Favorites
+      </a>
+    </div>
+  </nav>
+</header>
+
+
+
+
+</body>
+</html>
