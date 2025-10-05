@@ -1,3 +1,4 @@
+
 // changing bg-color on scroll for navbar
 
 window.addEventListener('scroll', function () {
