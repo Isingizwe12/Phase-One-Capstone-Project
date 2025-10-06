@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Book Explorer</title>
+    <title>Favorite </title>
 </head>
 <body>
-    <!-- Header -->
+       <!-- Header -->
 <header id="navbar" class="bg-white text-gray-800 shadow-lg sticky top-0 z-50 mb-1 p-2 transition-all duration-500">
 
 
@@ -54,8 +53,8 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1">
-      <a href="#" class=" nav-link block px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
-      <a href="#" class="nav-link px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
+      <a href="index.html" class=" nav-link block px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
+      <a href="about.html" class="nav-link px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
       <form class="flex items-center">
   <!-- Button first -->
   <button type="submit"
@@ -68,75 +67,43 @@
          class="flex-1 px-3 py-2 border border-gray-300 rounded-r-md outline-none focus:outline-none focus:ring-0 focus:border-gray-300 h-10" />
 </form>
 
-         <a href="favorite.html" class=" nav-link px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition">
-            🤍 Favorites
-          </a>
-        </div>
+     
+      <a href="favorite.html" class="nav-link px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition mt-2">
+        🤍 Favorites
+      </a>
     </div>
   </nav>
 </header>
-<!-- Main -->
 
-<main>
-    <!-- Hero Section -->
-<section class="relative h-screen bg-cover bg-center shadow-lg" style="background-image: url('assets/images/lib.jpg');">
-  
-  <!-- Dark overlay with lower opacity -->
-  <div class="absolute inset-0 bg-black" style="opacity: 0.5;"></div>
+ 
 
- <!-- Content -->
-<div class="relative z-10 flex items-center justify-center h-full px-4 md:px-20">
-  <div class="bg-white bg-opacity-90 p-6 md:p-10 rounded-lg shadow-lg text-center w-2xl">
-    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
-      Discover Your Next Favorite Book
-    </h1>
-    <p class="text-lg md:text-xl text-gray-800 mt-2">
-      Browse, search, and save your favorite books all in one place.
-    </p>
-    <a href="#books" class="mt-3 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-300 inline-block">
-      Explore Books
-    </a>
-  </div>
-</div>
+  <!-- Favorites Grid -->
+  <main class="py-10 bg-gray-100">
+     <!-- Hero / Title -->
+  <section class="bg-blue-500 p-10 mt-0 mb-4  text-center">
+    <h1>find all your favorites book here</h1>
+   
+  </section>
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
+      <!-- Favorite Book Card Example -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <img src="assets/images/library.jpg" alt="Book Title" class="h-48 w-full object-cover">
+        <div class="p-4 flex-1 flex flex-col">
+          <h3 class="text-lg font-semibold mb-1">Book Title</h3>
+          <p class="text-gray-600 text-sm mb-2">Author Name</p>
+          <p class="text-gray-700 text-sm flex-1">Short description about the book goes here.</p>
+          <button class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
+            ❌ Remove from Favorites
+          </button>
+        </div>
+      </div>
 
+      <!-- You can duplicate the above div for multiple favorite books -->
 
-</section>
-<!-- Books Section -->
-<section id="books" class="py-10 bg-gray-100">
-<div class="text-center mb-12">
-  <h2 class="text-3xl md:text-3xl font-bold text-gray-900 relative inline-block 
-             border-b-4 border-blue-500 pb-2
-             animate-bounceIn">
-    Our Book Collections
-  </h2>
-</div>
+    </div>
+  </main>
 
-  <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-   <div 
-  class="book-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-  data-id="1"
-  data-title="The Great Gatsby"
-  data-author="F. Scott Fitzgerald"
-  data-image="assets/images/library.jpg"
-  data-description="A novel about the American dream and love.">
-
-  <img src="assets/images/library.jpg" alt="The Great Gatsby" class="h-48 w-full object-cover">
-  <div class="p-4 flex-1 flex flex-col">
-    <h3 class="text-lg font-semibold mb-1">The Great Gatsby</h3>
-    <p class="text-gray-600 text-sm mb-2">F. Scott Fitzgerald</p>
-    <p class="text-gray-700 text-sm flex-1">A novel about the American dream and love.</p>
-    <button class="fav-btn mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
-      🤍 Add to Favorites
-    </button>
-  </div>
-</div>
-
-  </div>
-</section>
-
-</main>
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-gray-200 mt-12">
@@ -197,12 +164,6 @@
 </footer>
 
 
-
-<script type="module">
-  import { initNavbar } from './assets/js/index.js';
-  initNavbar(); // <--- call the function so navbar works
-</script>
-
-
+<script type="module" src="./assets/js/favoritePage.js"></script>
 </body>
 </html>

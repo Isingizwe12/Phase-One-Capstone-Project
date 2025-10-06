@@ -37,7 +37,7 @@
           </form>
 
           <!-- Favorites -->
-          <a href="#" class=" nav-link px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition">
+          <a href="favorite.html" class=" nav-link px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition">
             🤍 Favorites
           </a>
         </div>
@@ -233,6 +233,9 @@
 
 
 
-<script src="index.js" defer></script>
+<script type="module">
+  import { initNavbar } from './assets/js/index.js';
+  initNavbar(); // <--- call the function so navbar works
+</script>
 </body>
 </html>
