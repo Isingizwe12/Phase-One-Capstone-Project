@@ -23,8 +23,8 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-2">
-          <a href="#" class="px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
-          <a href="#" class="px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
+          <a href="index.html" class="px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
+          <a href="about.html" class="px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
 
           <!-- Search Form -->
           <form class="flex items-center gap-0">
@@ -54,8 +54,8 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1">
-      <a href="#" class="block px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
-      <a href="#" class="block px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
+      <a href="#" class="nav-link px-3 py-2 hover:bg-gray-200 rounded transition">Home</a>
+      <a href="#" class="nav-link px-3 py-2 hover:bg-gray-200 rounded transition">About</a>
       <form class="flex items-center">
   <!-- Button first -->
   <button type="submit"
@@ -68,7 +68,7 @@
          class="flex-1 px-3 py-2 border border-gray-300 rounded-r-md outline-none focus:outline-none focus:ring-0 focus:border-gray-300 h-10" />
 </form>
 
-      <a href="#" class="block px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition mt-2">
+      <a href="#" class="nav-link px-3 py-2 hover:bg-gray-200 rounded flex items-center gap-1 transition mt-2">
         🤍 Favorites
       </a>
     </div>
@@ -120,7 +120,7 @@
         <h3 class="text-lg font-semibold mb-1">The Great Gatsby</h3>
         <p class="text-gray-600 text-sm mb-2">F. Scott Fitzgerald</p>
         <p class="text-gray-700 text-sm flex-1">A novel about the American dream and love.</p>
-        <button class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
+        <button id="add-fav" class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
           🤍 Add to Favorites
         </button>
       </div>
@@ -230,7 +230,7 @@
 
 
 
-<script src="../lab2/index.js"></script>
+<script src="../lab2/index.js" defer></script>
 
 
 </body>
