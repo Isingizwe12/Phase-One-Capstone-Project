@@ -28,3 +28,8 @@ window.addEventListener('scroll', function () {
       });
     }
   });
+
+let addFav=document.getElementById("add-fav");
+addFav.addEventListener('click',function(){
+  alert('button clicked');
+})
