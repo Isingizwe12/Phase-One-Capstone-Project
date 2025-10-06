@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Book Explorer</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>About Us</title>
 </head>
 <body>
-    <!-- Header -->
+     <!-- Header -->
 <header id="navbar" class="bg-white text-gray-800 shadow-lg sticky top-0 z-50 mb-1 p-2 transition-all duration-500">
 
 
@@ -74,103 +73,107 @@
     </div>
   </nav>
 </header>
-<!-- Main -->
 
-<main>
-    <!-- Hero Section -->
-<section class="relative h-screen bg-cover bg-center shadow-lg" style="background-image: url('assets/images/lib.jpg');">
-  
-  <!-- Dark overlay with lower opacity -->
-  <div class="absolute inset-0 bg-black" style="opacity: 0.5;"></div>
-
- <!-- Content -->
-<div class="relative z-10 flex items-center justify-center h-full px-4 md:px-20">
-  <div class="bg-white bg-opacity-90 p-6 md:p-10 rounded-lg shadow-lg text-center w-2xl">
-    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
-      Discover Your Next Favorite Book
+<!-- MAIN CONTENT -->
+ <main>
+    <!-- About Us Page -->
+<section class="bg-gray-50 py-16 px-6 md:px-20">
+  <!-- Hero Section -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+      About <span class="text-blue-500">Book Explorer</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-800 mt-2">
-      Browse, search, and save your favorite books all in one place.
+    <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto animate-fade-in">
+      We’re passionate about connecting readers with stories that inspire, entertain, and enlighten.
     </p>
-    <a href="#books" class="mt-3 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-300 inline-block">
-      Explore Books
-    </a>
+  </div>
+
+  <!-- Who We Are -->
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center mb-16">
+    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Books" class="rounded-2xl shadow-md hover:scale-105 transition duration-500" />
+    <div>
+      <h2 class="text-2xl font-semibold text-gray-900 mb-3">Who We Are</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Book Explorer is your digital library companion. We help you browse, search, and discover books across genres and authors — all in one place. Whether you’re a student, a passionate reader, or someone new to the world of literature, we make exploring books simple and exciting.
+      </p>
+    </div>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="bg-blue-100 py-12 px-6 rounded-2xl shadow-inner mb-16">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-4">Our Mission</h2>
+    <p class="text-center text-lg text-gray-800 max-w-3xl mx-auto">
+      To empower readers by making books more accessible, engaging, and personalized. We aim to inspire curiosity, creativity, and lifelong learning through technology and storytelling.
+    </p>
+  </div>
+
+  <!-- Our Team -->
+  <div class="text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">Meet Our Team</h2>
+    <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+  <!-- Card 1 -->
+  <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 animate-smooth-slide">
+    <img src="./assets/images/profile.jpg" alt="Team member" class="w-24 h-24 mx-auto rounded-full mb-4">
+    <h3 class="text-xl font-semibold text-gray-800">Isingizwe Aline</h3>
+    <p class="text-blue-600">Founder & Developer</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 animate-smooth-slide">
+    <img src="./assets/images/aurore 2.jpg" alt="Team member" class="w-24 h-24 mx-auto rounded-full mb-4">
+    <h3 class="text-xl font-semibold text-gray-800">Ineza Aurore</h3>
+    <p class="text-blue-600">UI/UX Designer</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 animate-smooth-slide">
+    <img src="./assets/images/mimi.jpg" alt="Team member" class="w-24 h-24 mx-auto rounded-full mb-4">
+    <h3 class="text-xl font-semibold text-gray-800">Mireille Umurerwa</h3>
+    <p class="text-blue-600">Content Curator</p>
   </div>
 </div>
-
-
-
-</section>
-<!-- Books Section -->
-<section id="books" class="py-10 bg-gray-100">
-<div class="text-center mb-12">
-  <h2 class="text-3xl md:text-3xl font-bold text-gray-900 relative inline-block 
-             border-b-4 border-blue-500 pb-2
-             animate-bounceIn">
-    Our Book Collections
-  </h2>
-</div>
-
-  <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-    <!-- Book Card 1 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-      <img src="assets/images/library.jpg" alt="The Great Gatsby" class="h-48 w-full object-cover">
-      <div class="p-4 flex-1 flex flex-col">
-        <h3 class="text-lg font-semibold mb-1">The Great Gatsby</h3>
-        <p class="text-gray-600 text-sm mb-2">F. Scott Fitzgerald</p>
-        <p class="text-gray-700 text-sm flex-1">A novel about the American dream and love.</p>
-        <button class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
-          🤍 Add to Favorites
-        </button>
-      </div>
-    </div>
-
-    <!-- Book Card 2 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-      <img src="assets/images/lib.jpg" alt="To Kill a Mockingbird" class="h-48 w-full object-cover">
-      <div class="p-4 flex-1 flex flex-col">
-        <h3 id="titlle" class="text-lg font-semibold mb-1">To Kill a Mockingbird</h3>
-        <p id="auth-name" class="text-gray-600 text-sm mb-2">Harper Lee</p>
-        <p id="description" class="text-gray-700 text-sm flex-1">A story of racial injustice in the Deep South.</p>
-        <button class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
-          🤍 Add to Favorites
-        </button>
-      </div>
-    </div>
-
-    <!-- Book Card 3 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-      <img src="assets/images/library.jpg" alt="1984" class="h-48 w-full object-cover">
-      <div class="p-4 flex-1 flex flex-col">
-        <h3 class="text-lg font-semibold mb-1">1984</h3>
-        <p class="text-gray-600 text-sm mb-2">George Orwell</p>
-        <p class="text-gray-700 text-sm flex-1">A dystopian novel about totalitarianism.</p>
-        <button class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
-          🤍 Add to Favorites
-        </button>
-      </div>
-    </div>
-
-    <!-- Book Card 4 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-      <img src="assets/images/lib.jpg" alt="Pride and Prejudice" class="h-48 w-full object-cover">
-      <div class="p-4 flex-1 flex flex-col">
-        <h3 class="text-lg font-semibold mb-1">Pride and Prejudice</h3>
-        <p class="text-gray-600 text-sm mb-2">Jane Austen</p>
-        <p class="text-gray-700 text-sm flex-1">A classic romance novel with social commentary.</p>
-        <button class="mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
-          🤍 Add to Favorites
-        </button>
-      </div>
-    </div>
 
   </div>
 </section>
 
-</main>
+<!-- Simple fade animations -->
+<style>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-down {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+.animate-fade-in-down {
+  animation: fade-in-down 1s ease-out forwards;
+}
+/* Side-to-side card animation */
+@keyframes smooth-slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-<!-- Footer -->
+.animate-smooth-slide {
+  animation: smooth-slide 4s ease-in-out infinite;
+}
+</style>
+
+ </main>
+
+
+ <!-- Footer -->
 <footer class="bg-gray-900 text-gray-200 mt-12">
   <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -231,7 +234,5 @@
 
 
 <script src="/lab2/index.js"></script>
-
-
 </body>
 </html>
