@@ -112,28 +112,31 @@
   </h2>
 </div>
 
-  <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div id="books-container" 
+     class="max-w-5xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-   <div 
-  class="book-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-  data-id="1"
-  data-title="The Great Gatsby"
-  data-author="F. Scott Fitzgerald"
-  data-image="assets/images/library.jpg"
-  data-description="A novel about the American dream and love.">
+  <!-- Book Card -->
+  <div 
+    class="book-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+    data-id="1"
+    data-title="The Great Gatsby"
+    data-author="F. Scott Fitzgerald"
+    data-image="assets/images/library.jpg"
+    data-description="A novel about the American dream and love.">
 
-  <img src="assets/images/library.jpg" alt="The Great Gatsby" class="h-48 w-full object-cover">
-  <div class="p-4 flex-1 flex flex-col">
-    <h3 class="text-lg font-semibold mb-1">The Great Gatsby</h3>
-    <p class="text-gray-600 text-sm mb-2">F. Scott Fitzgerald</p>
-    <p class="text-gray-700 text-sm flex-1">A novel about the American dream and love.</p>
-    <button class="fav-btn mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
-      🤍 Add to Favorites
-    </button>
+    <img src="assets/images/library.jpg" alt="The Great Gatsby" class="h-48 w-full object-cover">
+    <div class="p-4 flex-1 flex flex-col">
+      <h3 class="text-lg font-semibold mb-1">The Great Gatsby</h3>
+      <p class="text-gray-600 text-sm mb-2">F. Scott Fitzgerald</p>
+      <p class="text-gray-700 text-sm flex-1">A novel about the American dream and love.</p>
+      <button class="fav-btn mt-3 bg-red-500 hover:bg-red-600 text-white py-2 rounded transition">
+        🤍 Add to Favorites
+      </button>
+    </div>
   </div>
+
 </div>
 
-  </div>
 </section>
 
 </main>
@@ -198,10 +201,8 @@
 
 
 
-<script type="module">
-  import { initNavbar } from './assets/js/index.js';
-  initNavbar(); // <--- call the function so navbar works
-</script>
+<script type="module" src="./assets/js/main.js"></script>
+
 
 
 </body>
