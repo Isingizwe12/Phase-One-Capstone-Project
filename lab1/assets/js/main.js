@@ -63,5 +63,5 @@ bookContainer.addEventListener('click', (e) => {
   }
 });
 
-// 3️⃣ Initial fetch
+//  Initial fetch
 fetchBooks(); // default query
