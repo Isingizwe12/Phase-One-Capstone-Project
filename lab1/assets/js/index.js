@@ -31,5 +31,19 @@ export function initNavbar() {
     }
   });
 }
+// making mobile menu appear  
+ const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
 
+  menuButton.addEventListener("click", () => {
+    // Toggle visibility
+    mobileMenu.classList.toggle("hidden");
+
+    // Change button icon ☰ ↔ ✖
+    if (mobileMenu.classList.contains("hidden")) {
+      menuButton.textContent = "☰";
+    } else {
+      menuButton.textContent = "✖";
+    }
+  });
 
